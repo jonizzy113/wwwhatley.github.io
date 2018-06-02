@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/gatsby-demo`,
+  pathPrefix: `/gatsby-demo/`,
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
