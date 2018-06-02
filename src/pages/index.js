@@ -1,16 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <div>
+    <Column>
       {posts.map(({ node: post }) => {
         const { frontmatter } = post
 
         return (
           <div>
-            <h2>
+            <h2 style={{ color: '#fff' }}>
               <Link to={frontmatter.path}>{frontmatter.title}</Link>
             </h2>
             <p>{frontmatter.date}</p>
@@ -27,7 +34,7 @@ const IndexPage = ({ data }) => {
           </div>
         )
       })}
-    </div>
+    </Column>
   )
 }
 
