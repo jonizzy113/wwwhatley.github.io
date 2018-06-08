@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   background-color: #2E3940;
 `
 
+const StyledColumn = styled.div`
+  width: calc(100% - 300px);
+`
+
 const Layout = ({ children, data }) => (
   <Wrapper>
     <Helmet
@@ -23,7 +27,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Nav />
-    <div>{children()}</div>
+    <StyledColumn>{children()}</StyledColumn>
   </Wrapper>
 )
 

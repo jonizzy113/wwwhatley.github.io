@@ -1,36 +1,56 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import { Title1, Title2, Text } from '../theme/index'
+import cuid from 'cuid'
 
 const Column = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 2em;
+`
+
+const StyledUl = styled.ul`
+  display: flex;
+  text-decoration: none;
+  margin: .5em 0;
+`
+
+const StyledLi = styled.li`
+  text-decoration: none;
+  list-style: none;
+  margin: 0 .2em;
+  font-family: 'Goudy Bookletter 1911', sans-serif;
 `
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Column>
+      <Title1 margin="1em 0 0 0">Code. Learn. Write. Teach</Title1>
       {posts.map(({ node: post }) => {
         const { frontmatter } = post
 
         return (
-          <div>
-            <h2 style={{ color: '#fff' }}>
+          <div style={{ margin: '1.5em 0' }} key={cuid()}>
+            <Title2 margin="0 0 .5em 0">
               <Link to={frontmatter.path}>{frontmatter.title}</Link>
-            </h2>
-            <p>{frontmatter.date}</p>
-            <p>{frontmatter.excerpt}</p>
-            <ul>
+            </Title2>
+
+            <Text color="#808080" margin="0">
+              {frontmatter.date}
+            </Text>
+            {/* <StyledUl>
               {post.frontmatter.tags.map(tag => {
                 return (
-                  <li>
+                  <StyledLi>
                     <Link to={`/tags/${tag}`}>{tag}</Link>
-                  </li>
+                  </StyledLi>
                 )
               })}
-            </ul>
+            </StyledUl> */}
+            <Text>{frontmatter.excerpt}</Text>
           </div>
         )
       })}

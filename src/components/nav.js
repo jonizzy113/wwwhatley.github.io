@@ -26,10 +26,11 @@ const Row = styled.div`
 `
 
 const Title2 = styled.h2`
-font-family: 'Fira Sans', sans-serif;
-font-size: 1.4em;
-color: #ECC090;
-margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.2em;
+  color: #ECC090;
+  margin: 0;
+  letter-spacing: .1em;
 `
 const StyledLink = styled(Link)`
   font-size: 1em;
@@ -73,9 +74,18 @@ const Nav = () => (
       </StyledLink>
     </Column>
     <Row margin="2em auto" justifycontent="space-evenly" width="80%">
-      <Icon src={Medium} alt="Will's Medium" />
-      <Icon src={Github} alt="Will's Github" />
-      <Icon src={Linkedin} alt="Will's Linkedin" />
+      <a href="https://medium.com/@william_54828" target="_blank">
+        <Icon src={Medium} alt="Will's Medium" />
+      </a>
+      <a href="https://github.com/wwwhatley" target="_blank">
+        <Icon src={Github} alt="Will's Github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/william-whatley-9b141b148/"
+        target="_blank"
+      >
+        <Icon src={Linkedin} alt="Will's Linkedin" />
+      </a>
     </Row>
   </StyledColumn>
 )
