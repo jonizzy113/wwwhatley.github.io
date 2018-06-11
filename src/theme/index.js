@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const Title1 = styled.h1`
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #ECC090;
-    margin: ${props => props.margin || '.5em 0'}
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #ecc090;
+  margin: ${props => props.margin || '.5em 0'};
 `
 
 export const Title2 = styled.h2`
@@ -39,4 +39,11 @@ export const Column = styled.div`
     flex-direction: column;
     margin: ${props => props.margin}
     align-items: ${props => props.alignitems};
+    justify-content: ${props => props.justifycontent};
+`
+export const Row = styled.div`
+  display: flex;
+  justify-content: ${props => props.justifycontent};
+  margin: ${props => props.margin};
+  width: ${props => props.width};
 `
