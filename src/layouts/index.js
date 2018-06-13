@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: #2E3940;
+  background-color: #2e3940;
 `
 
 const StyledColumn = styled.div`
