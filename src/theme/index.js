@@ -25,12 +25,13 @@ export const Title3 = styled.h3`
 `
 
 export const Text = styled.p`
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: ${props => props.color || '#fff'};
     margin: ${props => props.margin || '.5em 0'}
+    font-weight: ${props => props.fontweight || '300'}
     letter-spacing: .1em;
-    font-size: .9em;
-    line-height: 2.2em;
+    font-size: .85em;
+    line-height: 2em;
     font-weight: 300;
 `
 
@@ -40,10 +41,14 @@ export const Column = styled.div`
     margin: ${props => props.margin}
     align-items: ${props => props.alignitems};
     justify-content: ${props => props.justifycontent};
+    padding: ${props => props.padding};
+    width: ${props => props.width};
 `
 export const Row = styled.div`
   display: flex;
   justify-content: ${props => props.justifycontent};
+  align-items: ${props => props.alignitems};
   margin: ${props => props.margin};
+  padding: ${props => props.padding};
   width: ${props => props.width};
 `

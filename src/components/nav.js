@@ -52,19 +52,19 @@ const Nav = () => (
       <Title2 margin=".2em 0">William W. Whatley</Title2>
     </Column>
     <Column margin="0 2.2em">
-      <StyledLink to="/test" activeStyle={{ color: 'red' }}>
+      <StyledLink to="" activeStyle={{ color: '#ecc090' }}>
         Home
       </StyledLink>
-      <StyledLink to="/test" activeStyle={{ color: 'red' }}>
+      <StyledLink to="/about" activeStyle={{ color: '#ecc090' }}>
         About
       </StyledLink>
-      <StyledLink to="/test" activeStyle={{ color: 'red' }}>
+      <StyledLink to="/now" activeStyle={{ color: '#ecc090' }}>
         What am I doing now?
       </StyledLink>
-      <StyledLink to="/test" activeStyle={{ color: 'red' }}>
+      <StyledLink to="/posts" activeStyle={{ color: '#ecc090' }}>
         Posts
       </StyledLink>
-      <StyledLink to="/test" activeStyle={{ color: 'red' }}>
+      <StyledLink to="/tools" activeStyle={{ color: '#ecc090' }}>
         My Tools
       </StyledLink>
     </Column>
