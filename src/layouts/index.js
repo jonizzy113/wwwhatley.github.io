@@ -15,6 +15,8 @@ const Wrapper = styled.div`
 
 const StyledColumn = styled.div`
   width: calc(100% - 300px);
+  height: 100%;
+  overflow: scroll;
 `
 
 const Layout = ({ children, data }) => (
