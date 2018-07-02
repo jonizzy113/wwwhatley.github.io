@@ -6,6 +6,9 @@ import Link from 'gatsby-link'
 const StyledTitle3 = styled(Title3)`
   color: #a8ce93;
   font-weight: 600;
+  &:hover {
+    color: #9a95df;
+  }
 `
 
 const A = styled.a`
@@ -31,10 +34,14 @@ const others = [
   { name: 'ESLint', link: 'https://eslint.org/' },
 ]
 
-const Tool = ({ title, text }) => {
+const Tool = ({ title, text, link }) => {
   return (
     <div>
-      <StyledTitle3>{title}</StyledTitle3>
+      <StyledTitle3>
+        <a href={link} target="_blank">
+          {title}
+        </a>
+      </StyledTitle3>
       <Row margin=" 0 0 .4em 0">
         <Text>{text}</Text>
       </Row>
@@ -45,7 +52,7 @@ const Tool = ({ title, text }) => {
 const Tools = () => {
   return (
     <Column padding="1em 2em" width="85%">
-      <Title1 margin="1em 0 0 0">On my toolbelt</Title1>
+      <Title1>On my toolbelt</Title1>
       <Text>
         Most professions require some variety of tools in order to efficiently
         and effectively do what they do best. A developer is absolutely no
@@ -56,6 +63,7 @@ const Tools = () => {
       <Title2>Development</Title2>
       <Tool
         title="VS Code"
+        link="https://code.visualstudio.com/"
         text=" Any developer who knows me would also know my general disatsifaction
           and loathing demeanor towards Microsoft products--VS Code is DEFINTELY
           the exception. I don't need a reason to be overly enthusiastic about
@@ -68,6 +76,7 @@ const Tools = () => {
       />
       <Tool
         title="React.JS"
+        link="https://reactjs.org"
         text=" React.JS by Facebook's open source team is a declarative, JS framework
           that provides an easy-to-use component-based API. Utilizing component
           methods like constructor(), render(), and setState(), you tell React
@@ -84,6 +93,7 @@ const Tools = () => {
 
       <Tool
         title="Styled-Components"
+        link="https://www.styled-components.com/"
         text=" A friend of mine the other day asked if I still used styled-components
           and my response was Do I?! I'm not sure how we developed before
           anymore. Point is, I love my styled-components. A lightweight
@@ -91,7 +101,17 @@ const Tools = () => {
           the ability for you to create reusable, style-encapsulated components
           that compile down to html tags."
       />
-      <Tool title="Chart.JS" text="" />
+      <Tool
+        title="Chart.JS"
+        link="http://www.chartjs.org/"
+        text="Contrary to D3's extensive API, Chart.JS provides an easy-to-understand, 
+        fluid and lightweight data visualization API. We're currently using it throughout 
+        our application. It comes out-of-the-box with animations, and props that make it easy 
+        to display data. A simple AJAX call, a data model later, and bam!--you have charts! 
+        Now, I understand there are certain complex cases where Chart.JS may not do the job 
+        for you or your application, which is where D3 comes in. But if you're not requiring 
+        much craziness, then what's the point?"
+      />
       <Tool title="Cypress" />
       <StyledTitle3>Others</StyledTitle3>
       <Row style={{ flexWrap: 'wrap' }} margin="0 0 1em 0">
@@ -108,6 +128,7 @@ const Tools = () => {
       <Title2>Productivity</Title2>
       <Tool
         title="Bullet Journal"
+        link="http://bulletjournal.com/"
         text=" I’m not quite sure how I got by before without my notebook — I think
           at one point, I thought it was silly and outdated for a 20-something
           year old to be taking notes on paper… especially when you’re in the
@@ -116,6 +137,40 @@ const Tools = () => {
           Self-Growth, and Development (programming). Everywhere I go, so does
           my notebook — ready to capture some tip, interaction, or reflection
           that could be used to solve something later on."
+      />
+      <Tool
+        title="ToDoist"
+        link="https://en.todoist.com/"
+        text="I've been using ToDoist for several months now, and to-date, I have completed 2,892 tasks. I even use it for menial tasks such as 'text so and so.'
+        I have a goal to complete 10 tasks a day, and although I'm not always successful, my longest streak was 32 days!. I like ToDoist because of the day-to-day and week-by-week comparisons available."
+      />
+      <Tool
+        title="Forest App"
+        link="https://www.forestapp.cc/en/"
+        text="I LOVE Forest App--it's a pomodoro clock approach, with fun little trees 
+        you plant on the screen! Even better, when you collect so many points, you can plant 
+        REAL trees. So back up, what's a pomodoro clock? It's a methodology of working in 
+        25 minute intervals, with 5 minute breaks in between. Why is this effective? Because 
+        work is more deliberate when you are allocating a small amount of time to a particular 
+        task. I remember long back, I had a near 20 page proposal to complete--not a light 
+        task--especially when it's a highly technical document. This may have normally taken 
+        me a few days to complete--with the pomodoro method, I was able to complete the entire 
+        thing start-to-finish in a matter of hours. Because 25 minutes is far less overwhelming 
+        than looking at a complex task. I'm using it right now ;)"
+      />
+      <Tool
+        title="Trello"
+        link="https://trello.com/"
+        text="I'm not overly in love with Trello, however, for small business management, 
+        it serves its purpose. For development, we use Github projects for PM."
+      />
+      <Tool
+        title="Airmail"
+        link="http://airmailapp.com/features"
+        text="Yes, I use a Macbook Pro, and one thing that Apple cannot seem to get right 
+        is their mail client! Maybe they realize there isn't much of a market for paid email 
+        clients, who knows. I've been using Airmail for about a year now, and it's cool--no complaints. 
+        Nothing special except for the fact that I'm able to switch between my different emails pretty easily."
       />
     </Column>
   )
