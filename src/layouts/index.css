@@ -32,6 +32,23 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
+
+.blogPostTemplate > h1 {
+  font-family: 'Raleway', sans-serif;
+  color: red;
+}
+
+.blogPostTemplate > p {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 0.5em 0;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 0.85em;
+  line-height: 2em;
+  font-weight: 300;
+}
+
 progress {
   vertical-align: baseline;
 }

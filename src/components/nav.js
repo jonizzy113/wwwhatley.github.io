@@ -27,6 +27,10 @@ const Title2 = styled.h2`
   letter-spacing: 0.1em;
 `
 
+const StyledTitle3 = styled(Title3)`
+  color: #a9cd95;
+`
+
 const StyledLink = styled(Link)`
   font-size: 1em;
   font-family: 'Fira Sans', sans-serif;
@@ -48,7 +52,9 @@ const Nav = () => (
       <Img src={Headshot} alt="Will's Headshot" />
     </Row>
     <Column justifycontent="flex-start" alignitems="center" margin="0 0 1em 0">
-      <Title3 margin=".8em 0 .2em 0">Personal Blog & Site of</Title3>
+      <StyledTitle3 margin=".8em 0 .2em 0">
+        Personal Blog & Site of
+      </StyledTitle3>
       <Title2 margin=".2em 0">William W. Whatley</Title2>
     </Column>
     <Column margin="0 2.2em">
@@ -69,7 +75,7 @@ const Nav = () => (
       </StyledLink>
     </Column>
     <Row margin="2em auto" justifycontent="space-evenly" width="80%">
-      <a href="https://medium.com/@william_54828" target="_blank">
+      <a href="https://medium.com/@wwwhatley" target="_blank">
         <Icon src={Medium} alt="Will's Medium" />
       </a>
       <a href="https://github.com/wwwhatley" target="_blank">

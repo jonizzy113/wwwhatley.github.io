@@ -1,39 +1,42 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import { Title1, Title3, Text, Column, Row } from '../theme/index'
 
 const Template = ({ data, location, pathContext }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
   const { title, date } = frontmatter
   const { next, prev } = pathContext
-
   return (
-    <div>
+    <Column padding="1em 2em" width="85%">
       <Helmet title={`${frontmatter.title} - My Blog`} />
 
       <div>
-        <h1>{title}</h1>
-        <h3>{date}</h3>
+        <Title1>{title}</Title1>
+        <Title3>{date}</Title3>
 
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div
+          className="blogPostTemplate"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
 
-        <p>
+        <Text>
           {prev && (
             <Link to={prev.frontmatter.path}>
               Previous: {prev.frontmatter.title}
             </Link>
           )}
-        </p>
-        <p>
+        </Text>
+        {/* <Text>
           {next && (
             <Link to={next.frontmatter.path}>
               Next: {next.frontmatter.title}
             </Link>
           )}
-        </p>
+        </Text> */}
       </div>
-    </div>
+    </Column>
   )
 }
 
