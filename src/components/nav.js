@@ -67,9 +67,6 @@ const Nav = () => (
       <StyledLink to="/now" activeStyle={{ color: '#ecc090' }}>
         What am I doing now?
       </StyledLink>
-      <StyledLink to="/posts" activeStyle={{ color: '#ecc090' }}>
-        Posts
-      </StyledLink>
       <StyledLink to="/tools" activeStyle={{ color: '#ecc090' }}>
         My Tools
       </StyledLink>

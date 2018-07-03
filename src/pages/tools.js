@@ -112,7 +112,13 @@ const Tools = () => {
         for you or your application, which is where D3 comes in. But if you're not requiring 
         much craziness, then what's the point?"
       />
-      <Tool title="Cypress" />
+      <Tool
+        title="Cypress"
+        link="https://www.cypress.io/"
+        text="Cypress is an integration testing solution for the web--write tests using your 
+        favorite assertion library, then run your code and watch Cypress test in their web-based 
+        IDE. It doesn't get more simple than that!"
+      />
       <StyledTitle3>Others</StyledTitle3>
       <Row style={{ flexWrap: 'wrap' }} margin="0 0 1em 0">
         {others.map(tool => {
