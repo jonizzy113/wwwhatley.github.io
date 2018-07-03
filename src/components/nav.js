@@ -14,8 +14,8 @@ const StyledColumn = styled(Column)`
 `
 
 const Img = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 215px;
+  height: 215px;
   margin-top: 1.5em;
 `
 
@@ -40,6 +40,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   letter-spacing: 0.1em;
   padding: 0.3em;
+  margin: 0.2em 0;
   &:hover {
     background-color: #84b0e3;
     color: #dad996;
@@ -63,7 +64,7 @@ const Nav = () => (
     <Row justifycontent="center" margin="1em 0 0 0">
       <Img src={Headshot} alt="Will's Headshot" />
     </Row>
-    <Column justifycontent="flex-start" margin="0 0 1em 2.2em">
+    <Column justifycontent="flex-start" margin="0 0 1em 2.6em">
       <StyledTitle3 margin=".8em 0 .2em 0">
         Personal Blog & Site of
       </StyledTitle3>

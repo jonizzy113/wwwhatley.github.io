@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Title1, Title2, Title3, Text, Column, Row } from '../theme/index'
 import Link from 'gatsby-link'
+import Footer from '../components/footer'
 
 const StyledTitle3 = styled(Title3)`
   color: #a8ce93;
@@ -178,6 +179,7 @@ const Tools = () => {
         clients, who knows. I've been using Airmail for about a year now, and it's cool--no complaints. 
         Nothing special except for the fact that I'm able to switch between my different emails pretty easily."
       />
+      <Footer />
     </Column>
   )
 }

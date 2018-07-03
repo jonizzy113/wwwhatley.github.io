@@ -30,7 +30,7 @@ export const Text = styled.p`
     margin: ${props => props.margin || '.5em 0'}
     font-weight: ${props => props.fontweight || '300'}
     letter-spacing: .1em;
-    font-size: .85em;
+    font-size: ${props => props.fontsize || '.85em'};
     line-height: 2em;
     font-weight: 300;
 `

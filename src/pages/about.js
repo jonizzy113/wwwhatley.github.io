@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from '../components/footer'
 import { Title1, Title2, Text, Column, Row } from '../theme/index'
 
 const About = () => (
@@ -33,6 +34,7 @@ const About = () => (
         Blue Ridge Mountains. I also love beer, coffee, and traveling!
       </Text>
     </Row>
+    <Footer />
   </Column>
 )
 

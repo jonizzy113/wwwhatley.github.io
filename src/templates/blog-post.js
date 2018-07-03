@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Footer from '../components/footer'
 import { Title1, Title3, Text, Column, Row } from '../theme/index'
 
 const Template = ({ data, location, pathContext }) => {
@@ -28,14 +29,15 @@ const Template = ({ data, location, pathContext }) => {
             </Link>
           )}
         </Text>
-        {/* <Text>
+        <Text>
           {next && (
             <Link to={next.frontmatter.path}>
               Next: {next.frontmatter.title}
             </Link>
           )}
-        </Text> */}
+        </Text>
       </div>
+      <Footer />
     </Column>
   )
 }

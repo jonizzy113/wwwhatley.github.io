@@ -33,9 +33,37 @@ audio:not([controls]) {
   height: 0;
 }
 
+.line {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0
+    0;
+  border: 0;
+  margin: 2em 0;
+}
+
+.firstChar {
+  -webkit-initial-letter: 3;
+}
+
 .blogPostTemplate > h1 {
   font-family: 'Raleway', sans-serif;
   color: red;
+}
+
+.blogPostTemplate > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #7fc1ca;
+  line-height: 1.2em;
+}
+
+.blogPostTemplate > h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  color: #a8ce93;
+  font-weight: 600;
+  line-height: 1.2em;
 }
 
 .blogPostTemplate > p {

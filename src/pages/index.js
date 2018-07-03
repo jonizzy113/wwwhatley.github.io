@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Footer from '../components/footer'
 import { Title1, Title2, Text, Column } from '../theme/index'
 import cuid from 'cuid'
 
@@ -47,6 +48,7 @@ const IndexPage = ({ data }) => {
           </Column>
         )
       })}
+      <Footer />
     </Column>
   )
 }
