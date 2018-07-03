@@ -21,7 +21,10 @@ const Footer = () => (
   <StyledRow>
     <Text fontsize=".7em" color="#ccc">
       <span>&#169;</span>2018 William Whatley | Made with <Span>&#9829;</Span>{' '}
-      using GatsbyJS | Color scheme by Nova
+      using Gatsby.JS + React.JS |
+      <a href="https://trevordmiller.com/projects/nova" target="_blank">
+        Color scheme by Nova
+      </a>
     </Text>
   </StyledRow>
 )

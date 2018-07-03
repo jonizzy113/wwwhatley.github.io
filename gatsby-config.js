@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/gatsby-demo/`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'William W. Whatley | Personal site & blog',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
