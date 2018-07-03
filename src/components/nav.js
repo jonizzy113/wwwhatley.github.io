@@ -9,7 +9,7 @@ import Linkedin from '../assets/linkedin.svg'
 
 const StyledColumn = styled(Column)`
   height: 100vh;
-  width: 300px;
+  width: 325px;
   background-color: #3d4c54;
 `
 
@@ -29,6 +29,7 @@ const Title2 = styled.h2`
 
 const StyledTitle3 = styled(Title3)`
   color: #a9cd95;
+  font-size: 1.2em;
 `
 
 const StyledLink = styled(Link)`
@@ -37,8 +38,13 @@ const StyledLink = styled(Link)`
   font-weight: 300;
   color: #8db5ea;
   text-decoration: none;
-  margin: 0.4em 0;
   letter-spacing: 0.1em;
+  padding: 0.3em;
+  &:hover {
+    background-color: #84b0e3;
+    color: #dad996;
+    font-weight: 600;
+  }
 `
 
 const Icon = styled.img`
@@ -46,28 +52,34 @@ const Icon = styled.img`
   height: 30px;
 `
 
+const activeLinkStyle = {
+  color: '#DAD996',
+  backgroundColor: '#84B0E3',
+  fontWeight: '600',
+}
+
 const Nav = () => (
   <StyledColumn>
     <Row justifycontent="center" margin="1em 0 0 0">
       <Img src={Headshot} alt="Will's Headshot" />
     </Row>
-    <Column justifycontent="flex-start" alignitems="center" margin="0 0 1em 0">
+    <Column justifycontent="flex-start" margin="0 0 1em 2.2em">
       <StyledTitle3 margin=".8em 0 .2em 0">
         Personal Blog & Site of
       </StyledTitle3>
       <Title2 margin=".2em 0">William W. Whatley</Title2>
     </Column>
-    <Column margin="0 2.2em">
-      <StyledLink to="" activeStyle={{ color: '#ecc090' }}>
+    <Column margin="0 2em">
+      <StyledLink exact to="/" activeStyle={activeLinkStyle}>
         Home
       </StyledLink>
-      <StyledLink to="/about" activeStyle={{ color: '#ecc090' }}>
+      <StyledLink to="/about" activeStyle={activeLinkStyle}>
         About
       </StyledLink>
-      <StyledLink to="/now" activeStyle={{ color: '#ecc090' }}>
+      <StyledLink to="/now" activeStyle={activeLinkStyle}>
         What am I doing now?
       </StyledLink>
-      <StyledLink to="/tools" activeStyle={{ color: '#ecc090' }}>
+      <StyledLink to="/tools" activeStyle={activeLinkStyle}>
         My Tools
       </StyledLink>
     </Column>
