@@ -18,10 +18,13 @@ export const Title2 = styled.h2`
 
 export const Title3 = styled.h3`
     margin: ${props => props.margin || '.5em 0'}
-    color: #5882A0;
     font-size: 1.1em;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    color: #a8ce93;
+    font-weight: 600;
+    &:hover {
+        color: #9a95df;
+    } 
 `
 
 export const Text = styled.p`
@@ -32,7 +35,6 @@ export const Text = styled.p`
     letter-spacing: .1em;
     font-size: ${props => props.fontsize || '.85em'};
     line-height: 2em;
-    font-weight: 300;
 `
 
 export const Column = styled.div`

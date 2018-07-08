@@ -4,14 +4,6 @@ import { Title1, Title2, Title3, Text, Column, Row } from '../theme/index'
 import Link from 'gatsby-link'
 import Footer from '../components/footer'
 
-const StyledTitle3 = styled(Title3)`
-  color: #a8ce93;
-  font-weight: 600;
-  &:hover {
-    color: #9a95df;
-  }
-`
-
 const A = styled.a`
   text-decoration: underline;
   color: #fff;
@@ -38,11 +30,11 @@ const others = [
 const Tool = ({ title, text, link }) => {
   return (
     <div>
-      <StyledTitle3>
+      <Title3>
         <a href={link} target="_blank">
           {title}
         </a>
-      </StyledTitle3>
+      </Title3>
       <Row margin=" 0 0 .4em 0">
         <Text>{text}</Text>
       </Row>
@@ -120,7 +112,7 @@ const Tools = () => {
         favorite assertion library, then run your code and watch Cypress test in their web-based 
         IDE. It doesn't get more simple than that!"
       />
-      <StyledTitle3>Others</StyledTitle3>
+      <Title3>Others</Title3>
       <Row style={{ flexWrap: 'wrap' }} margin="0 0 1em 0">
         {others.map(tool => {
           return (
