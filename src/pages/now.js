@@ -40,8 +40,33 @@ const Now = () => (
     founders, myself and Raj, to manage the day-to-day of the engineering."
     />
     <Activity
+      company="Catatek"
+      title="Founder | Developer, July 2017 -- Present"
+      text1="My first self-employed venture was Catatek--a website and technology 
+      consulting firm based in St. Petersburg, FL. I maintain relationships with 
+      clients and serve them with a variety of services."
+    />
+    <Activity
+      company="Pinellas County Education Foundation"
+      title="Mentor August 2017 -- May 2018"
+      text1="I am a mentor for the Pinellas County Education Foundation program, 
+      Next Generation Tech. With the collaborative assistance of variously skilled 
+      and experienced industry leaders, the mentor team is responsible for contributing 
+      structure to high school students' software projects. We assist in teaching the 
+      students Agile and Waterfall software development methodologies, UI/UX design, 
+      market validation, business structure, brand techniques, execution of tasks, 
+      and presentation skills."
+    />
+    <Activity
       company="OnUp"
-      title="Stand-in Chief Technologist, October 2017 -- January 2018"
+      title="Stand in Chief Technologist, October 2017 -- January 2018"
+      text1="Starting October of 2017, I joined the OnUp team alongside Mike Kelly, 
+      former CEO of an at-scale payment processing company. I assisted Mike in ideating
+      an employee engagement platform designed to address the growing deficit accrued by
+      undesired employee attrition. My duties were to create the design system structure,
+      design visual elements such as user interface and user flow, program using technologies
+      such as React.JS and Node.JS, and attend high-level meetings with CEO's and executives from
+      large-scale companies."
     />
 
     <Footer />
