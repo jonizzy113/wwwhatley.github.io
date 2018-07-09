@@ -1,10 +1,11 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Title1 = styled.h1`
   font-family: 'Raleway', sans-serif;
   font-size: 2.2em;
   font-weight: 600;
   color: #ecc090;
+  line-height: 1.2em;
   margin: ${props => props.margin || '1em 0 0.5em 0'};
 `
 
@@ -14,6 +15,7 @@ export const Title2 = styled.h2`
     font-size: 1.6em;
     font-weight: 400;
     color: #7FC1CA;
+    line-height: 1.2em;
 `
 
 export const Title3 = styled.h3`
@@ -45,6 +47,19 @@ export const Column = styled.div`
     justify-content: ${props => props.justifycontent};
     padding: ${props => props.padding};
     width: ${props => props.width};
+    ${props =>
+      props.page &&
+      css`
+        padding: 1em 2em;
+        width: 85%;
+        @media (max-width: 1100px) {
+          width: 95%;
+        }
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+      `};
+     
 `
 export const Row = styled.div`
   display: flex;

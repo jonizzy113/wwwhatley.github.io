@@ -21,7 +21,7 @@ const StyledLi = styled.li`
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <Column padding="1em 2em" width="85%">
+    <Column page>
       <Title1 margin="1em 0 0 0">Code. Learn. Write. Teach</Title1>
       {posts.map(({ node: post }) => {
         const { frontmatter } = post

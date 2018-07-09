@@ -4,7 +4,7 @@ import Footer from '../components/footer'
 import { Title1, Title2, Text, Column, Row } from '../theme/index'
 
 const About = () => (
-  <Column padding="1em 2em" width="85%">
+  <Column page>
     <Title1>A little about me...</Title1>
     <Title2>Hello!</Title2>
     <Row margin=".8em 0">

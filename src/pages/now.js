@@ -19,7 +19,7 @@ const Activity = ({ company, title, text1, text2, text3 }) => (
 )
 
 const Now = () => (
-  <Column padding="1em 2em" width="85%">
+  <Column page>
     <Title1>What am I up to now?</Title1>
     <Activity
       company="Subchannel"

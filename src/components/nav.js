@@ -11,6 +11,11 @@ const StyledColumn = styled(Column)`
   height: 100vh;
   width: 325px;
   background-color: #3d4c54;
+  @media (max-width: 720px) {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+  }
 `
 
 const Img = styled.img`
@@ -53,6 +58,13 @@ const Icon = styled.img`
   height: 30px;
 `
 
+const TitleColumn = styled(Column)`
+  margin: 0 0 1em 2.6em;
+  @media (max-width: 720px) {
+    margin: 0 0 1em 0;
+  }
+`
+
 const activeLinkStyle = {
   color: '#DAD996',
   backgroundColor: '#84B0E3',
@@ -64,12 +76,12 @@ const Nav = () => (
     <Row justifycontent="center" margin="1em 0 0 0">
       <Img src={Headshot} alt="Will's Headshot" />
     </Row>
-    <Column justifycontent="flex-start" margin="0 0 1em 2.6em">
+    <TitleColumn>
       <StyledTitle3 margin=".8em 0 .2em 0">
         Personal Blog & Site of
       </StyledTitle3>
       <Title2 margin=".2em 0">William W. Whatley</Title2>
-    </Column>
+    </TitleColumn>
     <Column margin="0 2em">
       <StyledLink exact to="/" activeStyle={activeLinkStyle}>
         Home

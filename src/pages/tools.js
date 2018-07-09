@@ -44,7 +44,7 @@ const Tool = ({ title, text, link }) => {
 
 const Tools = () => {
   return (
-    <Column padding="1em 2em" width="85%">
+    <Column page>
       <Title1>On my toolbelt</Title1>
       <Text>
         Most professions require some variety of tools in order to efficiently

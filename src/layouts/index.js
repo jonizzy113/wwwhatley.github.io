@@ -11,12 +11,19 @@ const Wrapper = styled.div`
   height: 100vh;
   display: flex;
   background-color: #2e3940;
+  @media (max-width: 720px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `
 
 const StyledColumn = styled.div`
   width: calc(100% - 300px);
   height: 100%;
   overflow: scroll;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
 `
 
 const Layout = ({ children, data }) => (
