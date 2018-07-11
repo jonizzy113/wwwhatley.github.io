@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/gatsby-demo/`,
+  pathPrefix: `/personal-site/`,
   siteMetadata: {
     title: 'William W. Whatley | Personal site & blog',
   },
