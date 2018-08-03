@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---tutorial": [
-      "path---tutorial-81ee43f16eba8e1c61cc.js",
-      "path---tutorial-81ee43f16eba8e1c61cc.js.map"
+      "path---tutorial-de1106dec7c4954cacfe.js",
+      "path---tutorial-de1106dec7c4954cacfe.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-fb0a99c14999183a6fd8.js",
@@ -25,8 +25,8 @@
       "path---now-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tags-react-js": [
-      "path---tags-react-js-18fecb6c6088ec4816d6.js",
-      "path---tags-react-js-18fecb6c6088ec4816d6.js.map"
+      "path---tags-react-js-6a237d170699b289867f.js",
+      "path---tags-react-js-6a237d170699b289867f.js.map"
     ],
     "path---tools": [
       "path---tools-a0e39f21c11f6a62c5ab.js",
@@ -37,40 +37,40 @@
       "component---src-pages-tools-js-c7c180015667364d8cfd.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-5ab6eadbbe830dd63621.js",
-      "component---src-templates-blog-post-js-5ab6eadbbe830dd63621.js.map"
+      "component---src-templates-blog-post-js-9e352b9ad7cfad5d4d4e.js",
+      "component---src-templates-blog-post-js-9e352b9ad7cfad5d4d4e.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1911d3257f5c63fbf7f4.js",
-      "component---src-layouts-index-js-1911d3257f5c63fbf7f4.js.map"
+      "component---src-layouts-index-js-d3adb6f5dee5c33e6bee.js",
+      "component---src-layouts-index-js-d3adb6f5dee5c33e6bee.js.map"
     ],
     "path---tags-gatsby-js": [
-      "path---tags-gatsby-js-2e785d3aab5e3d6abecb.js",
-      "path---tags-gatsby-js-2e785d3aab5e3d6abecb.js.map"
+      "path---tags-gatsby-js-37202fe719e1c0dde6a6.js",
+      "path---tags-gatsby-js-37202fe719e1c0dde6a6.js.map"
     ],
     "path---tags-graph-ql": [
-      "path---tags-graph-ql-3f0a061ecaa895767ca0.js",
-      "path---tags-graph-ql-3f0a061ecaa895767ca0.js.map"
+      "path---tags-graph-ql-be48985826e8e6d39daa.js",
+      "path---tags-graph-ql-be48985826e8e6d39daa.js.map"
     ],
     "path---tutorial-2": [
-      "path---tutorial-2-b6853f79b6acb4ba421a.js",
-      "path---tutorial-2-b6853f79b6acb4ba421a.js.map"
+      "path---tutorial-2-73bdc3eee9d78c40435f.js",
+      "path---tutorial-2-73bdc3eee9d78c40435f.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-885c26d2f9b2158df03c.js",
-      "path---index-885c26d2f9b2158df03c.js.map"
+      "path---index-140236c37b03dea8a2f5.js",
+      "path---index-140236c37b03dea8a2f5.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-e3adc6deaf020c31895c.js",
-      "commons-e3adc6deaf020c31895c.js.map"
+      "commons-e9d994e12833ab90e257.js",
+      "commons-e9d994e12833ab90e257.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -89,9 +89,9 @@
       "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js.map"
     ],
     "app": [
-      "app-bd75cf9d2749731453d8.js",
+      "app-0eb6712bff29a4df307d.js",
       "build-js-styles.css",
-      "app-bd75cf9d2749731453d8.js.map",
+      "app-0eb6712bff29a4df307d.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
